@@ -1,0 +1,84 @@
+$date
+	Fri Nov 13 23:04:49 2026
+$end
+
+$version
+	Synopsys VCS version U-2023.03-SP2-8
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 3733a14752556bcc $end
+
+
+$scope module int8_tb $end
+$var reg 8 ! A [7:0] $end
+$var reg 8 " B [7:0] $end
+$var wire 16 # product [15:0] $end
+$var wire 32 $ product_ext [31:0] $end
+$var wire 32 % accumulator [31:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' rst $end
+
+$scope module dut $end
+$var wire 8 ! A [7:0] $end
+$var wire 8 " B [7:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' rst $end
+$var reg 16 # product [15:0] $end
+$var reg 32 $ product_ext [31:0] $end
+$var reg 32 % accumulator [31:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0&
+1'
+b00000000 !
+b00000000 "
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx %
+b0000000000000000 #
+b00000000000000000000000000000000 $
+$end
+#5000
+1&
+b00000000000000000000000000000000 %
+#10000
+0'
+b10011100 !
+b00110010 "
+0&
+b1110110001111000 #
+b11111111111111111110110001111000 $
+#15000
+1&
+b11111111111111111110110001111000 %
+#20000
+b10000000 !
+b10000000 "
+0&
+b0100000000000000 #
+b00000000000000000100000000000000 $
+#25000
+1&
+b00000000000000000010110001111000 %
+#30000
+b01111111 !
+b01111111 "
+0&
+b0011111100000001 #
+b00000000000000000011111100000001 $
+#35000
+1&
+b00000000000000000110101101111001 %
+#40000
+0&
+#45000
+1&
+b00000000000000001010101001111010 %
